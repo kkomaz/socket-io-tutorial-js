@@ -1,7 +1,25 @@
+/* 
+  Module dependencies:
+
+  - Express
+  - Http (to run Express)
+  - Body parser (to parse JSON requests)
+  - Underscore (because it's cool)
+  - Socket.IO(Note: we need a web server to attach Socket.IO to)
+
+  It is a common practice to name the variables after the module name.
+  Ex: http is the "http" module, express is the "express" module, etc.
+  The only exception is Underscore, where we use, conveniently, an 
+  underscore. Oh, and "socket.io" is simply called io. Seriously, the 
+  rest should be named after its module name.
+
+*/
+
 var express = require('express');
     app = express();
     http = require("http").createServer(app);
     bodyParser = require('body-parser');
+    io = require('socket.io').listen(http);
     _ = require('underscore');
 
 // Refactor for more restful routes
