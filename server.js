@@ -23,6 +23,9 @@ var express = require('express');
 var routes = require("./routes/index");
 app.use("/", routes);
 
+// var message = require("./routes/message");
+// app.use("/message", message);
+
 /* 
   The list of participants in our chatroom.
   The format of each participant will be:
@@ -50,7 +53,7 @@ app.use(express.static("public", __dirname + "/public"));
 
 app.use(bodyParser.json());
 
-app.post("/message", function(request, response) {
+app.post("/", function(request, response) {
   //The request body expects a param named "message"
   var message = request.body.message;
   var name = request.body.name;
