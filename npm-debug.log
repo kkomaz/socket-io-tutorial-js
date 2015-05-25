@@ -1,0 +1,295 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'locus' ]
+2 info using npm@2.9.1
+3 info using node@v0.12.3
+4 verbose install initial load of /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/package.json
+5 warn package.json socket-tutorial@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/body-parser/package.json
+7 verbose installManyTop reading scoped package data from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/express/package.json
+8 verbose installManyTop reading scoped package data from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/jade/package.json
+9 verbose installManyTop reading scoped package data from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/socket.io/package.json
+10 verbose installManyTop reading scoped package data from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/underscore/package.json
+11 verbose readDependencies loading dependencies from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/package.json
+12 silly cache add args [ 'locus', null ]
+13 verbose cache add spec locus
+14 silly cache add parsed spec { raw: 'locus',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'locus',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: '*',
+14 silly cache add   type: 'range' }
+15 silly addNamed locus@*
+16 verbose addNamed "*" is a valid semver range for locus
+17 silly addNameRange { name: 'locus', range: '*', hasData: false }
+18 silly mapToRegistry name locus
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/locus
+22 verbose addNameRange registry:https://registry.npmjs.org/locus not in flight; fetching
+23 verbose request uri https://registry.npmjs.org/locus
+24 verbose request no auth needed
+25 info attempt registry request try #1 at 1:09:38 PM
+26 verbose request id 8a2d1fe9ec7e55a0
+27 verbose etag "CO2F3K3BZN8JGJROO0YPN7X5F"
+28 http request GET https://registry.npmjs.org/locus
+29 http 304 https://registry.npmjs.org/locus
+30 silly get cb [ 304,
+30 silly get   { date: 'Mon, 25 May 2015 17:09:36 GMT',
+30 silly get     via: '1.1 varnish',
+30 silly get     'cache-control': 'max-age=60',
+30 silly get     etag: '"CO2F3K3BZN8JGJROO0YPN7X5F"',
+30 silly get     age: '30',
+30 silly get     connection: 'keep-alive',
+30 silly get     'x-served-by': 'cache-atl6231-ATL',
+30 silly get     'x-cache': 'HIT',
+30 silly get     'x-cache-hits': '1',
+30 silly get     'x-timer': 'S1432573776.594807,VS0,VE0',
+30 silly get     vary: 'Accept' } ]
+31 verbose etag https://registry.npmjs.org/locus from cache
+32 verbose get saving locus to /Users/kkomaz/.npm/registry.npmjs.org/locus/.cache.json
+33 silly addNameRange number 2 { name: 'locus', range: '*', hasData: true }
+34 silly addNameRange versions [ 'locus', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0' ] ]
+35 silly addNamed locus@0.1.0
+36 verbose addNamed "0.1.0" is a plain semver version for locus
+37 silly cache afterAdd locus@0.1.0
+38 verbose afterAdd /Users/kkomaz/.npm/locus/0.1.0/package/package.json not in flight; writing
+39 verbose afterAdd /Users/kkomaz/.npm/locus/0.1.0/package/package.json written
+40 silly install resolved [ { name: 'locus',
+40 silly install resolved     version: '0.1.0',
+40 silly install resolved     description: 'Line focuser',
+40 silly install resolved     main: 'lib/locus.js',
+40 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+40 silly install resolved     repository:
+40 silly install resolved      { type: 'git',
+40 silly install resolved        url: 'git+https://github.com/alidavut/locus.git' },
+40 silly install resolved     dependencies: { 'sync-prompt': '~0.2.2' },
+40 silly install resolved     devDependencies:
+40 silly install resolved      { matchdep: '~0.1.2',
+40 silly install resolved        grunt: '~0.4.1',
+40 silly install resolved        'grunt-contrib-coffee': '~0.7.0',
+40 silly install resolved        'grunt-contrib-watch': '~0.5.3' },
+40 silly install resolved     keywords: [ 'debugger', 'line', 'injection' ],
+40 silly install resolved     author: { name: 'Ali Davut' },
+40 silly install resolved     license: 'BSD-2-Clause',
+40 silly install resolved     bugs: { url: 'https://github.com/alidavut/locus/issues' },
+40 silly install resolved     gitHead: 'b36489eecaa1b042b0d98e0a511be6e188e6bb98',
+40 silly install resolved     homepage: 'https://github.com/alidavut/locus',
+40 silly install resolved     _id: 'locus@0.1.0',
+40 silly install resolved     _shasum: 'c4fdce6be145e19758f6789b14e2e4de38ba22e4',
+40 silly install resolved     _from: 'locus@*',
+40 silly install resolved     _npmVersion: '2.0.0-beta.0',
+40 silly install resolved     _npmUser: { name: 'alidavut', email: 'adavut@gmail.com' },
+40 silly install resolved     maintainers: [ [Object] ],
+40 silly install resolved     dist:
+40 silly install resolved      { shasum: 'c4fdce6be145e19758f6789b14e2e4de38ba22e4',
+40 silly install resolved        tarball: 'http://registry.npmjs.org/locus/-/locus-0.1.0.tgz' },
+40 silly install resolved     directories: {},
+40 silly install resolved     _resolved: 'https://registry.npmjs.org/locus/-/locus-0.1.0.tgz',
+40 silly install resolved     readme: 'ERROR: No README data found!' } ]
+41 info install locus@0.1.0 into /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+42 info installOne locus@0.1.0
+43 verbose installOne of locus to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial not in flight; installing
+44 verbose lock using /Users/kkomaz/.npm/_locks/locus-0c4b53af8041f13a.lock for /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+45 silly install write writing locus 0.1.0 to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+46 verbose unbuild node_modules/locus
+47 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus is being purged from base /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+48 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+49 verbose tar unpack /Users/kkomaz/.npm/locus/0.1.0/package.tgz
+50 verbose tar unpacking to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+51 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus is being purged
+52 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry package.json
+55 silly gunzTarPerm extractEntry .npmignore
+56 silly gunzTarPerm extractEntry README.md
+57 silly gunzTarPerm extractEntry Gruntfile.coffee
+58 silly gunzTarPerm extractEntry lib/locus.js
+59 silly gunzTarPerm extractEntry src/locus.coffee
+60 verbose write writing to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/package.json
+61 info preinstall locus@0.1.0
+62 verbose readDependencies loading dependencies from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/package.json
+63 silly prepareForInstallMany adding sync-prompt@~0.2.2 from locus dependencies
+64 verbose readDependencies loading dependencies from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/package.json
+65 silly cache add args [ 'sync-prompt@~0.2.2', null ]
+66 verbose cache add spec sync-prompt@~0.2.2
+67 silly cache add parsed spec { raw: 'sync-prompt@~0.2.2',
+67 silly cache add   scope: null,
+67 silly cache add   name: 'sync-prompt',
+67 silly cache add   rawSpec: '~0.2.2',
+67 silly cache add   spec: '>=0.2.2 <0.3.0',
+67 silly cache add   type: 'range' }
+68 silly addNamed sync-prompt@>=0.2.2 <0.3.0
+69 verbose addNamed ">=0.2.2 <0.3.0" is a valid semver range for sync-prompt
+70 silly addNameRange { name: 'sync-prompt', range: '>=0.2.2 <0.3.0', hasData: false }
+71 silly mapToRegistry name sync-prompt
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/sync-prompt
+75 verbose addNameRange registry:https://registry.npmjs.org/sync-prompt not in flight; fetching
+76 verbose request uri https://registry.npmjs.org/sync-prompt
+77 verbose request no auth needed
+78 info attempt registry request try #1 at 1:09:38 PM
+79 verbose etag "F1FI93FOC31FJ12S7F7R5MWHL"
+80 http request GET https://registry.npmjs.org/sync-prompt
+81 http 304 https://registry.npmjs.org/sync-prompt
+82 silly get cb [ 304,
+82 silly get   { date: 'Mon, 25 May 2015 17:09:36 GMT',
+82 silly get     via: '1.1 varnish',
+82 silly get     'cache-control': 'max-age=60',
+82 silly get     etag: '"F1FI93FOC31FJ12S7F7R5MWHL"',
+82 silly get     age: '30',
+82 silly get     connection: 'keep-alive',
+82 silly get     'x-served-by': 'cache-atl6228-ATL',
+82 silly get     'x-cache': 'HIT',
+82 silly get     'x-cache-hits': '1',
+82 silly get     'x-timer': 'S1432573776.796757,VS0,VE0',
+82 silly get     vary: 'Accept' } ]
+83 verbose etag https://registry.npmjs.org/sync-prompt from cache
+84 verbose get saving sync-prompt to /Users/kkomaz/.npm/registry.npmjs.org/sync-prompt/.cache.json
+85 silly addNameRange number 2 { name: 'sync-prompt', range: '>=0.2.2 <0.3.0', hasData: true }
+86 silly addNameRange versions [ 'sync-prompt',
+86 silly addNameRange   [ '0.0.0',
+86 silly addNameRange     '0.0.1',
+86 silly addNameRange     '0.1.0',
+86 silly addNameRange     '0.2.0',
+86 silly addNameRange     '0.2.1',
+86 silly addNameRange     '0.2.2',
+86 silly addNameRange     '0.3.1',
+86 silly addNameRange     '0.3.2',
+86 silly addNameRange     '0.3.3-beta',
+86 silly addNameRange     '0.4.0',
+86 silly addNameRange     '0.4.1',
+86 silly addNameRange     '0.4.2' ] ]
+87 silly addNamed sync-prompt@0.2.2
+88 verbose addNamed "0.2.2" is a plain semver version for sync-prompt
+89 silly cache afterAdd sync-prompt@0.2.2
+90 verbose afterAdd /Users/kkomaz/.npm/sync-prompt/0.2.2/package/package.json not in flight; writing
+91 verbose afterAdd /Users/kkomaz/.npm/sync-prompt/0.2.2/package/package.json written
+92 silly install resolved [ { name: 'sync-prompt',
+92 silly install resolved     description: 'Synchronously prompt your user for command-line input.',
+92 silly install resolved     homepage: 'https://github.com/shovon/sync-prompt',
+92 silly install resolved     keywords: [ 'command', 'line', 'io' ],
+92 silly install resolved     version: '0.2.2',
+92 silly install resolved     author:
+92 silly install resolved      { name: 'Salehen Shovon Rahman',
+92 silly install resolved        email: 'salehen.rahman@gmail.com',
+92 silly install resolved        url: 'http://shovon.github.io' },
+92 silly install resolved     scripts:
+92 silly install resolved      { test: './node_modules/mocha/bin/mocha && ./node_modules/jshint/bin/jshint .',
+92 silly install resolved        coverage: './node_modules/istanbul/lib/cli.js cover _mocha -- -u exports -R spec',
+92 silly install resolved        coveralls: './node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage',
+92 silly install resolved        install: 'node-gyp rebuild' },
+92 silly install resolved     repository:
+92 silly install resolved      { type: 'git',
+92 silly install resolved        url: 'git+https://github.com/shovon/sync-prompt.git' },
+92 silly install resolved     bugs: { url: 'https://github.com/shovon/sync-prompt/issues' },
+92 silly install resolved     license:
+92 silly install resolved      { type: 'MIT',
+92 silly install resolved        url: 'https://github.com/shovon/blob/master/LICENSE' },
+92 silly install resolved     main: './lib/sync-prompt',
+92 silly install resolved     devDependencies:
+92 silly install resolved      { sinon: '~1.7.3',
+92 silly install resolved        jshint: '~2.1.4',
+92 silly install resolved        mocha: '~1.12.0',
+92 silly install resolved        istanbul: '~0.1.44',
+92 silly install resolved        coveralls: '~2.3.0',
+92 silly install resolved        'mocha-lcov-reporter': '0.0.1' },
+92 silly install resolved     gypfile: true,
+92 silly install resolved     _id: 'sync-prompt@0.2.2',
+92 silly install resolved     dist:
+92 silly install resolved      { shasum: 'dc48b36e2961e87650a8600ac122ff1ca4267c2e',
+92 silly install resolved        tarball: 'http://registry.npmjs.org/sync-prompt/-/sync-prompt-0.2.2.tgz' },
+92 silly install resolved     _from: 'sync-prompt@>=0.2.2 <0.3.0',
+92 silly install resolved     _npmVersion: '1.3.5',
+92 silly install resolved     _npmUser: { name: 'shovon', email: 'salehen.rahman@gmail.com' },
+92 silly install resolved     maintainers: [ [Object] ],
+92 silly install resolved     directories: {},
+92 silly install resolved     _shasum: 'dc48b36e2961e87650a8600ac122ff1ca4267c2e',
+92 silly install resolved     _resolved: 'https://registry.npmjs.org/sync-prompt/-/sync-prompt-0.2.2.tgz',
+92 silly install resolved     readme: 'ERROR: No README data found!' } ]
+93 info install sync-prompt@0.2.2 into /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+94 info installOne sync-prompt@0.2.2
+95 verbose installOne of sync-prompt to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus not in flight; installing
+96 verbose lock using /Users/kkomaz/.npm/_locks/sync-prompt-a151c86507b8aea0.lock for /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+97 silly install write writing sync-prompt 0.2.2 to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+98 verbose unbuild node_modules/locus/node_modules/sync-prompt
+99 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt is being purged from base /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+100 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+101 verbose tar unpack /Users/kkomaz/.npm/sync-prompt/0.2.2/package.tgz
+102 verbose tar unpacking to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+103 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt is being purged
+104 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+105 silly gunzTarPerm modes [ '755', '644' ]
+106 silly gunzTarPerm extractEntry package.json
+107 silly gunzTarPerm extractEntry .npmignore
+108 silly gunzTarPerm extractEntry README.md
+109 silly gunzTarPerm extractEntry LICENSE
+110 silly gunzTarPerm extractEntry test.js
+111 silly gunzTarPerm extractEntry HISTORY.md
+112 silly gunzTarPerm extractEntry binding.gyp
+113 silly gunzTarPerm extractEntry lib/sync-prompt.js
+114 silly gunzTarPerm extractEntry src/sync_prompt.cc
+115 verbose write writing to /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt/package.json
+116 info preinstall sync-prompt@0.2.2
+117 verbose readDependencies loading dependencies from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt/package.json
+118 verbose readDependencies loading dependencies from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt/package.json
+119 silly install resolved []
+120 verbose about to build /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+121 info build /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+122 info linkStuff sync-prompt@0.2.2
+123 silly linkStuff sync-prompt@0.2.2 has /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules as its parent node_modules
+124 verbose linkBins sync-prompt@0.2.2
+125 verbose linkMans sync-prompt@0.2.2
+126 verbose rebuildBundles sync-prompt@0.2.2
+127 info install sync-prompt@0.2.2
+128 verbose unsafe-perm in lifecycle true
+129 info sync-prompt@0.2.2 Failed to exec install script
+130 verbose unlock done using /Users/kkomaz/.npm/_locks/sync-prompt-a151c86507b8aea0.lock for /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+131 verbose about to build /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+132 verbose unlock done using /Users/kkomaz/.npm/_locks/locus-0c4b53af8041f13a.lock for /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+133 verbose stack Error: sync-prompt@0.2.2 install: `node-gyp rebuild`
+133 verbose stack Exit status 1
+133 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+133 verbose stack     at EventEmitter.emit (events.js:110:17)
+133 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+133 verbose stack     at ChildProcess.emit (events.js:110:17)
+133 verbose stack     at maybeClose (child_process.js:1015:16)
+133 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+134 verbose pkgid sync-prompt@0.2.2
+135 verbose cwd /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+136 error Darwin 14.1.0
+137 error argv "node" "/usr/local/bin/npm" "install" "locus"
+138 error node v0.12.3
+139 error npm  v2.9.1
+140 error code ELIFECYCLE
+141 error sync-prompt@0.2.2 install: `node-gyp rebuild`
+141 error Exit status 1
+142 error Failed at the sync-prompt@0.2.2 install script 'node-gyp rebuild'.
+142 error This is most likely a problem with the sync-prompt package,
+142 error not with npm itself.
+142 error Tell the author that this fails on your system:
+142 error     node-gyp rebuild
+142 error You can get their info via:
+142 error     npm owner ls sync-prompt
+142 error There is likely additional logging output above.
+143 verbose exit [ 1, true ]
+144 verbose unbuild node_modules/locus/node_modules/sync-prompt
+145 info preuninstall sync-prompt@0.2.2
+146 info uninstall sync-prompt@0.2.2
+147 verbose unbuild rmStuff sync-prompt@0.2.2 from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules
+148 verbose unbuild rmStuff in /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules
+149 info postuninstall sync-prompt@0.2.2
+150 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt is being purged from base /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+151 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+152 silly vacuum-fs purging /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules/sync-prompt
+153 silly vacuum-fs removing /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus/node_modules
+154 silly vacuum-fs quitting because other entries in /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+155 verbose unbuild node_modules/locus
+156 info preuninstall locus@0.1.0
+157 info uninstall locus@0.1.0
+158 verbose unbuild rmStuff locus@0.1.0 from /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules
+159 info postuninstall locus@0.1.0
+160 silly gentlyRm /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus is being purged from base /Users/kkomaz/Development/personal/javascript/node/socket-tutorial
+161 verbose gentlyRm don't care about contents; nuking /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+162 silly vacuum-fs purging /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules/locus
+163 silly vacuum-fs quitting because other entries in /Users/kkomaz/Development/personal/javascript/node/socket-tutorial/node_modules

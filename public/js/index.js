@@ -82,6 +82,7 @@ function init() {
       return;
     }
     sendMessage();
+    $('#outgoingMessage').val('');
   }
  }
 
