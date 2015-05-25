@@ -26,6 +26,17 @@ var express = require('express');
 // var routes = require("./routes/index");
 // app.use("/", routes);
 
+/* 
+  The list of participants in our chatroom.
+  The format of each participant will be:
+  {
+    id: "sessionId",
+    name: "participantName"
+  }
+*/
+
+var participants = [];
+
 //Server configuration
 app.set("ipaddr", "127.0.0.1");
 app.set("port", 8080);
@@ -50,14 +61,35 @@ app.get("/", function(request, response){
 app.post("/message", function(request, response) {
   //The request body expects a param named "message"
   var message = request.body.message;
+  var name = request.body.name;
+
   if(_.isUndefined(message) || _.isEmpty(message.trim())) {
     return response.json(400, {error: "Message is invalid"});
   }
+  //include sender name + message
+  io.sockets.emit("incomingMessage", {message: message, name: name});
   response.json(200, {message: "Message received"});
 });
 
-//curl -X POST -H 'Content-Type:application/json' 'http://127.0.0.1:8080/message' -d '{"message": "Good news, everyone!"}'
+// Socket.IO events 
 
+io.on("connection", function(socket){
+  socket.on("newUser", function(data){
+    participants.push({id: data.id, name: data.name});
+    io.sockets.emit("newConnection", {participants: participants});
+  });
+});
+  socket.on("nameChange", function(data){
+    _.findWhere(participants, {id: socket.id}).name = data.name;
+    io.sockets.emit("nameChanged", {id: socket.id, name: data.name});
+  });
+  socket.on("disconnect", function(){
+    participants = _.without(participants, _.findWhere(participants, {id: socket.id}));
+    io.sockets.emit("userDisconnected", {id: socket.id, sender: "system"});
+  });
 http.listen(app.get("port"), app.get("ipaddr"), function(){
   console.log("Server up and running. Go to http://" + app.get("ipaddr") + ":" + app.get("port"));
 });
+
+
+//curl -X POST -H 'Content-Type:application/json' 'http://127.0.0.1:8080/message' -d '{"message": "Good news, everyone!"}'
