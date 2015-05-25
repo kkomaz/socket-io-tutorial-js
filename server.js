@@ -78,7 +78,6 @@ io.on("connection", function(socket){
     participants.push({id: data.id, name: data.name});
     io.sockets.emit("newConnection", {participants: participants});
   });
-});
   socket.on("nameChange", function(data){
     _.findWhere(participants, {id: socket.id}).name = data.name;
     io.sockets.emit("nameChanged", {id: socket.id, name: data.name});
@@ -87,6 +86,7 @@ io.on("connection", function(socket){
     participants = _.without(participants, _.findWhere(participants, {id: socket.id}));
     io.sockets.emit("userDisconnected", {id: socket.id, sender: "system"});
   });
+});  
 http.listen(app.get("port"), app.get("ipaddr"), function(){
   console.log("Server up and running. Go to http://" + app.get("ipaddr") + ":" + app.get("port"));
 });
